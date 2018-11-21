@@ -1,0 +1,16 @@
+def fib(n):
+    current, next_num = 1, 1
+    sum = 0
+    while current < n:
+        if current % 2 == 0:
+            sum += current
+        current, next_num = next_num, current + next_num
+    print(sum)
+
+
+def main(*args):
+    fib(*args)
+
+
+if __name__ == '__main__':
+    main(4000000)
